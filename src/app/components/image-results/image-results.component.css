@@ -1,0 +1,28 @@
+.results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px 0;
+  max-width: 700px;
+  padding: 0;
+}
+
+.results li {
+  justify-content: space-around;
+  padding: 0  0 0 20px;
+}
+
+.paging {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.paging li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  padding: 0 20px;
+  
+}

@@ -1,0 +1,13 @@
+<ul class="results">
+  <li  *ngFor="let image of images.data | 
+    paginate: { 
+      itemsPerPage: limit, 
+      currentPage: currentPage, 
+      totalItems: images.pagination.total_count
+    }">
+  <img [src]='image.images.downsized.url' width="120" height="120" />
+  </li>
+</ul>
+<pagination-controls
+  (pageChange)="currentPage= $event;pageChanged($event)">
+</pagination-controls>
