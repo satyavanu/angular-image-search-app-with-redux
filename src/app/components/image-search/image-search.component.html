@@ -1,5 +1,5 @@
 <div class="container">
-  <form [formGroup]="ImageForm" (submit)="onSubmit(ImageForm.value.name)">
+  <form [formGroup]="ImageForm" (submit)="onSubmit(ImageForm.value.name, ImageForm.value.page)">
     <div class="inner-form">
       <div class="input-field">
         <button class="btn-search" type="button">
@@ -10,6 +10,12 @@
         <div class="input-field">
           <input type="text" formControlName="name" placeholder="What are you looking for?" />
         </div>
+        <div class="filter">
+          <label> Results / Page</label>
+          <select formControlName="page">
+            <option *ngFor="let filter of filters" [ngValue]="filter">{{filter}}</option>
+          </select>
+        </div>
       </div>
     </div>
   </form>
@@ -17,7 +23,7 @@
   <app-image-results
     *ngIf="(images$ | async) as images"
     [images]="images"
-    [limit]="limit">
+    [limit]="ImageForm.value.page">
   </app-image-results>
 </div>
 

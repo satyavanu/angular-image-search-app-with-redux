@@ -1,8 +1,8 @@
 import { Action } from '@ngrx/store';
 
 export enum ImageActionTypes {
-  LoadGiphyImages = '[LoadImages] LoadGiphyImages',
-  UpdateGiphyImages = '[LoadImages] UpdateGiphyImages'
+  LoadGiphyImages = '[Images] LoadGiphyImages',
+  UpdateGiphyImages = '[Images] UpdateGiphyImages'
 }
 
 export class LoadGiphyImages implements Action {
