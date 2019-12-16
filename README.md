@@ -15,3 +15,9 @@ $ cd giphy
 $ npm i
 $ ng serve
 ```
+
+### Technical Choices
+ - Used ngRedux ( for state management )
+ 
+ 
+
