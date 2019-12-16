@@ -11,7 +11,7 @@ import { take } from 'rxjs/operators';
 })
 export class ImageResultsComponent implements OnInit {
 
-  @Input() images: [];
+  @Input() images;
   @Input() limit;
   @Output() pageChange: EventEmitter<number>;
 

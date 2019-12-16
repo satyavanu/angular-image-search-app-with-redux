@@ -1,22 +1,17 @@
-##  About Project
+# Giphy App
 
-Giphy is simple image search app
+# About
+Giphy app is image search applictaion, which uses giphy API and returns images based on the search query
 
-## What you need
+### Installation
 
-have node installed, if not download here
-angular-cli, if not download here
+Giphy requires [Node.js](https://nodejs.org/) v10+ to run.
+and [angular-cli](https://cli.angular.io/)
 
-## Run The Project
+Install the dependencies and devDependencies and start the server.
 
-git clone <repo>
-cd repo
-npm install
-
-
-To run the project   - npm run serve or ng serve
-To test the project  - npm run test or ng test
-To build the project - npm run build or ng build
-
-
-
+```sh
+$ cd giphy
+$ npm i
+$ ng serve
+```

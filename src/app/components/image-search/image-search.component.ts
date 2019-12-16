@@ -16,9 +16,8 @@ import { getImages } from '../../state/image/image.selectors';
 
 export class ImageSearchComponent implements OnInit {
 
-  public images$: Observable<any>;
-  protected readonly limit = 25;
-  protected readonly filters = [10, 20 , 25];
+  images$: Observable<any>;
+  filters = [10, 20 , 25];
 
 
   ImageForm = new FormGroup({
